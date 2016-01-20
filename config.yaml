@@ -1,0 +1,5 @@
+name: ichizi
+version: 1
+handle:
+ - rewrite: if (in_header["host"] !~ "^ichizi.cn" && path ~ "^(.*)$") goto "http://ichizi. cn/$1 [L,QSA,R=301]"
+ - rewrite: if (in_header["host"] ~ "^www.ichizi.cn" && path ~ "^(.*)$") goto "http://ichizi. cn/$1 [L,QSA,R=301]"

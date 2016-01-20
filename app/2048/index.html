@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2048 - 简直停不下来</title>
+<meta name="description" content="合并数字，得到2048，一款超级简单却又极易上瘾的游戏，一旦玩上它就根本停不下来！"/> 
+<meta name="keywords" content="2048,游戏,数字合并" /> 
+<link href="main.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+<meta name="format-detection" content="telephone=no" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">你能拼出 <strong>2048</strong> 吗？   <br />   驰子正在挑战 4096 ……</p>
+	  
+      <a class="restart-button">重新开始</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	      <a class="keep-playing-button">继续挑战</a>
+          <a class="retry-button">再来一次</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">如何玩：</strong> 使用键盘 <strong>方向键</strong> 或手指  <strong>触摸滑动</strong> 屏幕来移动方块，当两个相同数字的方块接触时，他们就会 <strong>合体</strong> !
+    </p>
+
+  </div>
+<script src="2048.js"></script>
+</body>
+</html>

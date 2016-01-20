@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <title>Shape Shifter</title>
+    <link rel="stylesheet" href="site.min.css">
+  </head>
+  <body>
+    <canvas class="canvas"></canvas>
+
+    <div class="help">?</div> 
+
+    <div class="ui">
+      <input class="ui-input" type="text" />
+      <span class="ui-return">↵</span>
+    </div>
+
+    <div class="overlay">
+      <span class="baidu-share">
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+      </span>
+
+      <div class="tabs">
+        <div class="tabs-labels"><span class="tabs-label tabs-label--active">技巧</span><span class="tabs-label">信息</span><span class="tabs-label">分享</span></div>
+
+        <div class="tabs-panels">
+          <ul class="tabs-panel commands">
+            <li class="commands-item"><span class="commands-item-title">文字</span><span class="commands-item-info" data-demo="Hello :)">任意文字类型</span><span class="commands-item-action">演示</span></li>
+            <li class="commands-item"><span class="commands-item-title">倒计时</span><span class="commands-item-info" data-demo="#countdown 10">#countdown<span class="commands-item-mode">数字</span></span><span class="commands-item-action">演示</span></li>
+            <li class="commands-item"><span class="commands-item-title">小图标</span><span class="commands-item-info" data-demo="#icon thumbs-up">#icon<span class="commands-item-mode">图标名</span>&nbsp;(使用 <a href="http://fontawesome.dashgame.com/" target="_blank">Font Awesome</a>图标库)</span><span class="commands-item-action">演示</span></li>
+            <li class="commands-item"><span class="commands-item-title">时间</span><span class="commands-item-info" data-demo="#time">#time</span><span class="commands-item-action">演示</span></li>
+            <li class="commands-item"><span class="commands-item-title">矩形</span><span class="commands-item-info" data-demo="#rectangle 30x15">#rectangle<span class="commands-item-mode">宽 x 高</span></span><span class="commands-item-action">演示</span></li>
+            <li class="commands-item"><span class="commands-item-title">圆形</span><span class="commands-item-info" data-demo="#circle 25">#circle<span class="commands-item-mode">直径</span></span><span class="commands-item-action">演示</span></li>
+
+            <li class="commands-item commands-item--gap"><span class="commands-item-title">动画</span><span class="commands-item-info" data-demo="The time is|#time|#countdown 3|#icon thumbs-up"><span class="commands-item-mode">command1</span>&nbsp;|<span class="commands-item-mode">command2</span></span><span class="commands-item-action">演示</span></li>
+          </ul>
+
+          <div class="tabs-panel ui-details">
+            <div class="ui-details-content">
+              <h1>Shape Shifter</h1>
+              <p>
+                原创作者 ： <a href="http://www.kennethcachia.com" target="_blank">Kenneth Cachia<a/>.<br/>
+                图标素材 ： <a href="http://fortawesome.github.io/Font-Awesome/#icons-new" target="_blank">Font Awesome</a>.<br/>
+                翻译修正 ： <a href="http://ichizi.cn" target="_blank">驰子</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="tabs-panel ui-share">
+            <div class="ui-share-content">
+              <h1>Sharing</h1>
+              <p>在网址后添加<em>?a=</em>要展示的文字 来分享给你的朋友. 比如:</p>
+              <p>
+                <a href="?a=Hello">ichizi.cn/app/shifter?a=Hello</a><br/>
+                <a href="?a=Hello|#countdown 3">ichizi.cn/app/shifter?a=Hello?a=Hello|#countdown 3</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="shape-shifter.js"></script>
+  </body>
+</html>
