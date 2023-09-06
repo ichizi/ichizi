@@ -19,12 +19,12 @@ function getViewSize() {
 $(function () {
 
 	julying.gridMenu.menu = Array(
-		{ name: 'about-me', pos: rand(1, 14) },
+		{ name: 'about-me', pos: rand(1, 10) },
 		{ name: 'works', pos: rand(15, 25) },
-		{ name: 'link', pos: rand(26, 36) },
-		{ name: 'reading', pos: rand(37, 50) },
-		{ name: 'apps', pos: rand(51, 65) },
-		{ name: 'contact-me', pos: rand(66, 80) }
+		{ name: 'link', pos: rand(30, 40) },
+		{ name: 'reading', pos: rand(45, 55) },
+		{ name: 'apps', pos: rand(60, 70) },
+		{ name: 'contact-me', pos: rand(75, 80) }
 
 	);
 	julying.gridMenu.init('#julyingGridMenu');
