@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<link rel="alternate" type="application/rss+xml" title="atom 1.0" href="/feed">
+
+    <title>Not Found</title><link href="/template/style/css/404.scss" type="text/css" rel="stylesheet"/>
+  </head>
+  <div class="page_404">
+    <div class="page_404_part1"><img src="/template/style/images/star2.svg" class="animated fadeInDown"/>
+    </div>
+    <div class="page_404_part2"><img src="/template/style/images/404.svg" class="animated fadeInDown"/>
+    </div>
+    <div class="page_404_part3"><img src="/template/style/images/mar.svg" class="animated fadeInDown"/>
+    </div><script type="text/javascript" src="/service/static_3rd/staticfile/ajax/libs/jquery/1.9.0/jquery.min.js"></script><script type="text/javascript" src="/template/style/js/autoscroll.js"></script>
+    <script>$(function(){
+  window.autoscroll.interval = 10;
+  window.autoscroll.threshold = 50;
+  window.autoscroll.velocity = 5;
+  window.autoscroll.acceleration = 1;
+  window.autoscroll.start();
+  });
+
+</script>
+  </div>
+</html><!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NW5CHK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NW5CHK');</script>
+<!-- End Google Tag Manager -->

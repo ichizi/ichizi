@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name=viewport content="width=600,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>不会百度么？</title>
+	<meta name=keywords content=不会百度么,你不会百度么,不会自己找嘛,到底咋整啊,大佬帮帮我啊,你到底会不会啊>
+	<base target=_blank>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<!-- <script type="text/javascript" src="mian.js"></script> -->
+</head>
+
+<body>
+	<h1>不会百度么？</h1>
+	<form id="searchBar">
+		<input name="text" type="search" placeholder="输入关键字，回车搜索" autocomplete="off">
+		<button>百度一下</button>
+	</form>
+	<p id="instructions">输入搜索关键字</p>
+	<div id="mouse"></div>
+	<button id="operateBtn">停一停、停一停！我是自己人，我要生成链接</button>
+	<div id="result"></div>
+	<script> ! function () {
+			for (var t,
+				n = encodeURIComponent,
+				o = location.search.substr(1).split("&"),
+				e = o.length,
+				i = {}; e--;)
+				
+				t = o[e].split("="), i[t.shift()] = decodeURIComponent(t.join("="));
+			i.ss;
+			var s,
+				a = function (t, n, o) {
+					var e = -1,
+						i = function () {
+							e++ , item = t[e], item ? n.call(e, item, i) : o && o()
+						};
+					i()
+				},
+				c = function (t, n) {
+					mouse.style.cssText = "top:" + t + "px;left:" + n + "px;"
+				},
+				u = function (t) {
+					instructions.innerHTML = t
+				},
+				r = function (t, n) {
+					s = setTimeout(t, n)
+				},
+				f = searchBar.text,
+				l = function (t) {
+					clearTimeout(s), f.value = "", f.blur(), history.pushState({}, t, location.pathname + "?s=" + n(t)), c(
+						searchBar.offsetTop + 25, searchBar.offsetLeft + searchBar.offsetWidth / 2), u("光标移至输入框，左键单击"), r(function () {
+							mouse.classList.add("click"), r(function () {
+								f.focus(), u("键入搜索关键字"), r(function () {
+									mouse.classList.remove("click"), a(t.split(""), function (n, o) {
+										var e = this + 1;
+										f.value = t.substr(0, e), f.selectionStart = f.selectionEnd =
+											e, r(o, 50 + 250 * Math.random())
+									}, function () {
+										c(searchBar.offsetTop + 25, searchBar.offsetLeft + searchBar.offsetWidth -
+											60), u("点击「百度一下」按钮，进行搜索"), r(function () {
+												mouse.classList.add("click"), u("等待跳转到搜索结果页..."),
+													r(function () {
+														location.href =
+															"https://www.baidu.com/s?wd=" +
+															n(t)
+													}, 700)
+											}, 1200)
+									})
+								}, 800)
+							}, 100)
+						}, 1100)
+				};
+			searchBar.onsubmit = function (t) {
+				t.preventDefault();
+				var n = f.value.replace(/^\s+|\s+$/g, "");
+				if (!n) return f.focus(), void u("请正确输入搜索关键词");
+				l(n)
+			}, operateBtn.onclick = function () {
+				clearTimeout(s),
+					operateBtn.innerHTML = "在输入框输入关键字，再来点我",
+					c(20, 20);
+				var t = f.value.replace(/^\s+|\s+$/g, "");
+				if (!t) return f.focus(), void u("请正确输入搜索关键词");
+				history.pushState({}, "不会百度么？", "/");
+				var o = location.origin + location.pathname + "?s=" + n(t);
+				result.innerHTML = '<h3>生成链接</h3><p>通用地址：<a href="' + o + '">' + o +
+					'</a></p><p class="微博短链">微博短链：<span style="#999">生成中…</span></p>';
+				var e = new XMLHttpRequest;
+				e.open("GET", "http://maiyurl.cn/weibourl?url_long=" + n(o), 1), e.onload = function () {
+					var t = e.response;
+					t && (document.querySelector(".微博短链").innerHTML = '微博短链：<a href="' + t + '">' + t + "</a>")
+				}, e.send()
+			}, i.s && r(function () {
+				l(i.s)
+			}, 1e3);
+			var p = document.body,
+				d = function (t) {
+					var n = document.createElement("script");
+					n.src = t, n.onload = function () {
+						p.removeChild(n)
+					}, p.appendChild(n)
+				};
+		}() 
+	</script>
+	<footer><a href=//ichizi.cn>i驰子 </a> </footer> </body> </html>
